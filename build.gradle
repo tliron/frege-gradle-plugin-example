@@ -1,0 +1,19 @@
+plugins {
+	id 'org.frege-lang' version '0.5'
+}
+
+apply plugin: 'application'
+
+repositories {
+	mavenLocal()
+	mavenCentral()
+}
+
+dependencies {
+	compile(group: 'org.frege-lang', name: 'frege', version: '3.22.367-g2737683')
+}
+
+run {
+	main = 'examples.SimpleIO'
+	standardInput = System.in
+}
