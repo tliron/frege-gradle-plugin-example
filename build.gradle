@@ -10,10 +10,10 @@ repositories {
 }
 
 dependencies {
-	compile(group: 'org.frege-lang', name: 'frege', version: '3.22.367-g2737683')
+	compile group: 'org.frege-lang', name: 'frege', version: '3.22.367-g2737683'
 }
 
 run {
 	main = 'examples.SimpleIO'
-	standardInput = System.in
+	standardInput = System.in // because our application wants user input
 }
